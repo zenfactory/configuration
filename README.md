@@ -43,6 +43,10 @@ To deploy the entire edX platform on a single ec2 instance
 run the following commands:
 
 ```
+sudo apt-get install python3
+sudo apt-get install virtualenvwrapper
+cat "alias python='python3' >> ~/.bashrc
+source ~/.bashrc
 git clone git@github.com:edx/configuration
 mkvirtualenv ansible
 cd configuration
