@@ -42,7 +42,6 @@ over time, so expect frequent changes.
 To deploy the entire edX platform on a single ec2 instance
 run the following commands:
 
-```
 sudo apt-get install python3
 sudo apt-get install virtualenvwrapper
 cat "alias python='python3' >> ~/.bashrc
@@ -54,7 +53,6 @@ pip install -r ansible-requirements.txt
 cd playbooks
 (adjust the settings in edx_sandbox.yml)
 `ansible-playbook  -vvv --user=ubuntu edx_sandbox.yml -i inventory.ini -e 'secure_dir=secure_example`
-```
 
 This will install the following services on a single instance
 
@@ -415,4 +413,7 @@ following to run your playbook.
 
 *Note: this assumes the group used for the edx stack was "edxapp_stage"*
 
+=======
+>>>>>>> upstream/master
 
+For more information including installation instruction please see the [Configuration Wiki](https://github.com/edx/configuration/wiki).
