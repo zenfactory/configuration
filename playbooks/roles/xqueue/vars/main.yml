@@ -20,7 +20,7 @@ xqueue_env_config:
     'open-ended': !!null
   'XQUEUE_WORKERS_PER_QUEUE': 12
   'LOGGING_ENV' : 'sandbox'
-  'LOG_DIR' : '/mnt/logs'
+  'LOG_DIR' : '/logs'
   'SYSLOG_SERVER' : 'syslog.a.m.i4x.org'
   'RABBIT_HOST' : 'localhost'
   'S3_BUCKET_PREFIX' : 'sandbox-bucket'
@@ -105,6 +105,7 @@ xqueue_debian_pkgs:
   - python-numpy
   - python-pip
   - python-scipy
+  - python-mysqldb
   - rake
   - reprepro
   - rsyslog
